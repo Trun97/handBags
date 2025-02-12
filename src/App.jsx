@@ -5,6 +5,9 @@ import Image2 from './assets/bag_2.png'
 import Image3 from './assets/bag_3.png'
 import Image4 from './assets/bag_4.png'
 import Product from "./components/Products/Products.jsx";
+import Tiles from "./components/Tiles/Tiles.jsx";
+import PictureBrand from './assets/brand.png';
+
 
 function App() {
     function atClick(event) {
@@ -24,28 +27,37 @@ function App() {
                 <Product
                     leftCornerItem="Best seller"
                     image={Image1}
-                    nameBag="The handy bag"
+                    nameBag="handy"
                     priceBag={400}
                 />
                 <Product
                     leftCornerItem="Best seller"
                     image={Image2}
-                    nameBag="The stylish bag"
+                    nameBag="stylish"
                     priceBag={250}
                 />
                 <Product
                     leftCornerItem="New Collection"
                     image={Image3}
-                    nameBag="The simple bag"
+                    nameBag="simple"
                     priceBag={300}
                 />
                 <Product
                     leftCornerItem="Best seller"
                     image={Image4}
-                    nameBag="The trendy bag"
+                    nameBag="trendy"
                     priceBag={150}
                 />
             </main>
+            <footer>
+                <Tiles
+                picture={PictureBrand}
+                title="The Brand"
+                text="Lorem ipsum etc"/>
+                <Tiles/>
+                <Tiles/>
+                <Tiles/>
+            </footer>
         </>
     )
 }
